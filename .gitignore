@@ -210,6 +210,7 @@ __marimo__/
 *.zip
 images/
 benchmark_results/
+notebooks/runs/
 
 # Model files (too large for git)
 models/
