@@ -1,0 +1,19 @@
+name: aio2025-onnx-tensorrt-env
+channels:
+  - conda-forge
+  - main
+  - defaults
+dependencies:
+  - python=3.11
+  - conda-forge::fastapi
+  - conda-forge::uvicorn
+  - pip
+  - pip:
+      - -extra-index-url https://download.pytorch.org/whl/cu130
+      - torch
+      - torchvision
+      - torchaudio
+      - tensorrt-cu13
+  - onnx
+  - conda-forge::onnxruntime
+  - conda-forge::ultralytics
